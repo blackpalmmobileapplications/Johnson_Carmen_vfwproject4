@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!--
+Deliverable 2
+Carmen Johnson
+VFW Online 6/7/2012
+-->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta name="keywords" content="camping list, camping checklist, checklist app" />
+	<meta name="description" content="This app enables you to make sure that you're taking every single item required on a camping check-list" />
+	<meta name="robots" content="INDEX, FOLLOW" />
+	<title>Add Item</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+</head>
+<body>
+	<header>
+		<h1>ListCheck</h1>
+		<p>This app enables you to make sure that you're taking every single item required on a camping check-list.</p>
+	</header>
+	<form action="#" method="POST">
+		<fieldset>
+			<legend>Add Item</legend>
+			<label for="category">Select Cateogory</label>
+			<select name="category" id="category"></select><br />
+			<label for="name">Name: </label><input type="text" name="name" id="name" /><br />
+			<label for="quantity">Quantity: </label><input type="range" name="quantity" id="quantity" min="1" max="10" value="1" /><br />
+			<label for="date">Purchase By: </label><input type="date" name="date" id="date" /><br />
+			<label for="important">Important? </label><input type="checkbox" name="important" id="important" /><br />
+			<label for="comments">Comments: </label><textarea name="comments" id="comments" cols="30" rows="10"></textarea><br />
+			<input type="button" class="actionbutton" id="button" value="Add Item!" />
+			<p id="success"></p>
+			<input type="button" class="actionbutton" id="clearform" value="Clear Form" />
+		</fieldset>
+	</form>
+	
+	<div id="listbox">
+		
+	</div>
+	<a class="button" id="clearButton" >Clear Local Storage</a>
+	
+</body>
+</html>
